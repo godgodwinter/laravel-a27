@@ -19,7 +19,6 @@ class CreateProductsTable extends Migration
             $table->string('sku');
             $table->string('harga_modal');
             $table->string('harga_jual');
-            $table->string('harga_jual');
             $table->bigInteger('product_categories_id')->unsigned();
             $table->foreign('product_categories_id')
                     ->references('id')
